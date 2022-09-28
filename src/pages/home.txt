@@ -1,0 +1,53 @@
+.main-text{
+    
+    Bigger screens
+    @media only screen and (min-width: 769px){
+        h1{
+            font-size:200px;
+        }
+        h3{
+            font-size:50px;
+        }
+        span{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+
+        }
+    }
+    
+    Mobile
+    @media (max-width: 480px){
+        h1{
+            font-size:100px;
+        }
+        h3{
+            font-size:30px;
+        }
+        span{
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+
+    Tab
+    @media (min-width: 481px) and (max-width:768px){
+        h1{
+            font-size:100px;
+        }
+        h3{
+            font-size:30px;
+        }
+        span{
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+    }
+
+}
+
+const navRef = useRef();
+
+  const showNavbar = () => {
+      navRef.current.classlist.toggle("Responsive")
+  }

@@ -1,0 +1,30 @@
+.nav-logo {
+  height: 40px;
+}
+
+.wait {
+  color: white;
+  font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+  .nav-wrapper {
+    background: #0a241c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .nav-wrapper .main-wrapper .nav-text {
+    margin-top: 10px;
+  }
+  .nav-wrapper .menu-cont {
+    height: 60vh;
+  }
+  .change {
+    transform: none;
+  }
+}/*# sourceMappingURL=nav.css.map */

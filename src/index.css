@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Kaftan";   /*Can be any text*/
+    src: local("Kaftan"),
+      url("./assets/fonts/Kaftan\ -\ Trial.otf") format("truetype");
+  }
+
+
+@font-face {
+    font-family: "Neue-regular";   /*Can be any text*/
+    src: local("Neue-regular"),
+      url("./assets/fonts/Neue-montreal/NeueMontreal-Regular.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Neue-bold";   /*Can be any text*/
+    src: local("Neue-bold"),
+      url("./assets/fonts/Neue-montreal/NeueMontreal-Bold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Neue-light";   /*Can be any text*/
+    src: local("Neue-light"),
+      url("./assets/fonts/Neue-montreal/NeueMontreal-Light.otf") format("truetype");
+  }
