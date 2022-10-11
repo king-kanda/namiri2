@@ -74,10 +74,10 @@ const Testimonial = () => {
                         <div className="tt-top flex items-center justify-between">
                         <div className="nam-tt">
                                 <h2 className="name-c font-NeueBold p-1">
-                                Wakili Mwaniki
+                                Gabriel DuPont
                                 </h2>
                                 <span className='font-NeueRegular'>
-                                    Managing Partner , <br /> Fraciah & CO.
+                                    Managing Diirector , <br /> Iyebe Orchards.
                                 </span>
                         </div>
                         <div className="tt-img">
@@ -85,8 +85,9 @@ const Testimonial = () => {
                         </div>
                         </div>
                         <p className="testimonial font-NeueRegular py-6 px-4 ">
-                        Best web designer.I highly recommend.My website was upgraded to my specifications & satisfaction. Not to forget the constant support I get incase i need adjustment on my website.
-                        Thanks.
+                          A fun Expirience learning , Kikuyu , and also getting my designs done,Quality and Speed ,The best i have ever met.
+                          I know my business is in safe hands now. <br />
+                          <span className="italics">Bon Travail</span>
                         </p>
                         <p className='font-kaftan text-end px-3 text-6xl text-namiri-light'>
                             "

@@ -2,7 +2,7 @@ import React from 'react'
 import { Navbar ,Footer } from '../components'
 import styled from 'styled-components'
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
-import { FraciahLaw } from '../assets';
+import { FraciahLaw, Iyebe, ReignD } from '../assets';
 const ourwork = () => {
 
       const Nav = styled.div`
@@ -28,7 +28,12 @@ const ourwork = () => {
       `;
 
       const Portfolio = styled.section`
+            padding:48px;
 
+            @media (max-width: 480px){
+              padding:12px;
+
+            }
       `;
 
       const Fraciah = styled.div`
@@ -38,7 +43,7 @@ const ourwork = () => {
           margin-bottom:50px;
 
           img{
-            height:100%;
+            height:100vh;
           }
 
           @media (max-width: 480px){
@@ -94,10 +99,10 @@ const ourwork = () => {
                     <img src={FraciahLaw} alt="fraciah law mockup" />
                 </Fraciah>
                 <Fraciah className='lg:py-6 p-3 lg:mb-4'>
-                    <img src={FraciahLaw} alt="fraciah law mockup" />
+                    <img src={Iyebe} alt="fraciah law mockup" />
                 </Fraciah>
                 <Fraciah className='lg:py-6 p-3 lg:mb-4'>
-                    <img src={FraciahLaw} alt="fraciah law mockup" />
+                    <img src={ReignD} alt="fraciah law mockup" />
                 </Fraciah>
             </Portfolio>
         {/*  */}

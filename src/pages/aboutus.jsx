@@ -166,10 +166,10 @@ const Aboutus = () => {
             <div className="lg:px-6 lg:py-4 p-4 lg:m-6  m3">
                <div className="img-grid lg:flex md:flex items-center justify-between md:justify-around">
                     <div className="img-1 lg:px-4">
-                        <img src={IMG2} alt="" id='1' />
+                        <img src={IMG1} alt="" id='1' />
                     </div>
                     <div className="img-2 lg:px-4 mt-10 lg:mt-0 md:mt-0">
-                        <img src={IMG1} alt="" id='2' />
+                        <img src={IMG2} alt="" id='2' />
                     </div>
                </div>
             </div>

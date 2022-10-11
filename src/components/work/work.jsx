@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FraciahLaw } from '../../assets';
+import { FraciahLaw, Iyebe } from '../../assets';
 
 const Work = () => {
 
@@ -81,7 +81,7 @@ const Work = () => {
           </Item>
           <Item className='item-display container flex items-center justify-center mt-12' >
             <div className="prt-itm">
-              <img src={FraciahLaw} alt="" />
+              <img src={Iyebe} alt="" />
             </div>
           </Item>
           <Item className='item-display container flex items-center justify-center mt-12' >

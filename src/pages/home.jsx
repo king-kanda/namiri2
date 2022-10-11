@@ -1,19 +1,28 @@
-import React from 'react'
+import React , {useRef , useEffect} from 'react'
 // import { useEffect } from 'react'
 import { Navbar ,Footer ,Work, Testimonial } from '../components'
 import styled from 'styled-components'
-import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner , Giphy} from '../assets'
+import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner , Giphy  ,Vector} from '../assets'
 import { BsArrowRightShort } from "react-icons/bs";
-// import { gsap } from "gsap";
+import { gsap } from "gsap";
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+
 
 const Home = () => {
+
+  const opac = useRef()
+
+  useEffect(() => {
+    gsap.to(opac.current, { opacity: "+=0.9" });
+    console.log('s')
+  });
 
   const HeroText = styled.h1`
       font-size:100px;
       padding-left:38px;
       padding-right:48px;
+     
 
-      
       span::after {
         content:'' ;
         background:url(${Giphy});
@@ -220,20 +229,21 @@ const Home = () => {
          
         }
       
-        img{
-          width: 256px;
-          height: 192px;
-        }
+        // img{
+        //   background:red;
+        //   width: 256px;
+        //   height: 192px;
+        // }
 
         @media (max-width: 480px){
           .text-holder{
             margin-left:10px;
            
           }
-          img{
-            width: 256px;
-            height: 192px;
-          }
+          // img{
+          //   width: 256px;
+          //   height: 192px;
+          // }
         }
   `;
 
@@ -246,9 +256,9 @@ const Home = () => {
       <Hero className="hero container px-12 md:px-4">
        <div className="hero-container">
           <p className='font-NeueRegular text-namiri-yellow'>Karibu, We are Namiri Creatives</p>
-          <HeroText className='lg:font-kaftan md:font-kaftan font-NeueBold text-white'>
+          <HeroText ref={opac} className='lg:font-kaftan md:font-kaftan font-NeueBold text-white'>
             Creating <span className='text-namiri-yellow font-kaftan'>Timeless</span> <br />
-            Brands.
+            Brands. 
           </HeroText>
           <Buttons className="cta-btns  w-72 flex items-center justify-between  ">
             <button className='rounded bg-namiri-yellow text-namiri-light font-NeueRegular px-5  py-2'>
@@ -386,7 +396,7 @@ We specialize in creating effective strategies and powerful identities , seamles
               </p>
             </div>
             <div className="image-svg-logo">
-              <img src={Giphy} class="img-fluid rounded-top" alt=""></img>
+              {/* <img src={Vector} class="img-fluid rounded-top" alt=""></img> */}
             </div>
           </div>
       </About>
