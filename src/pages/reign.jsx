@@ -1,11 +1,12 @@
 import React , {useEffect} from 'react'
+import '../App.css'
 import { Navbar , Footer } from '../components'
 import styled from 'styled-components';
-import { FraciahDribble, FraciahHeader, FraciahLaw, FraciahMobile } from '../assets';
+import { FraciahDribble, FraciahHeader, FraciahLaw, FraciahMobile, ReignD } from '../assets';
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
 
 
-const Fraciah = () => {
+const Reign = () => {
 
     useEffect(()=>{
         window.scrollTo(0, 0);
@@ -72,21 +73,21 @@ const Fraciah = () => {
         <div className="main-body container">
             <Hero className="hero lg:px-12 p-6">
                 <div className="hero-container">
-                    <p className='font-NeueRegular text-white'> Wakili A Quick One !</p>
+                    <p className='font-NeueRegular text-white'> Ooh Say Ahhh !</p>
                     <HeroText className='font-kaftan text-white'>
-                    <span className='text-namiri-yellow'> Unique </span> Approach to <br />
-                    Law.
+                    <span className='text-namiri-yellow'> You  </span> Smile they  <br />
+                    Smile.
                     </HeroText>
                 </div>    
             </Hero>
             <div className="intro p-4 flex items-center justify-center container">
                 <div className="img-container">
-                    <img src={FraciahHeader} alt="" />
+                    <img src={ReignD} alt="" className='reign-banner'  />
                 </div>
                 <div className="cl-det text-white px-10">
                     <div className="cl-info p-4">
                         <div className="h3 underline font-NeueBold text-2xl py-2">Client</div>
-                        <p className='font-NeueRegular'>Frachia law & CO Advocates</p>
+                        <p className='font-NeueRegular'> Reign Dental Services </p>
                     </div>
                     <div className="cl-del p-4">
                         <div className="h3 underline font-NeueBold text-2xl py-2">Deliverables</div>
@@ -102,7 +103,8 @@ const Fraciah = () => {
             </div>
             <div className="cl-abt flex items-start justify-center container p-6 m-2">
                 <p className='text-white text-4xl font-NeueRegular w-4/5'>
-                Fraciah & CO Advocates is a boutique law firm located in the heart of Nairobi with a team of highly qualified and dynamic professionals who represent the new face of legal practice in tune with today’s legal requirements.
+                    Every smile has a story , Reign dental services in a full time dental clinic , with a goal to recreate your natural smile so you feel and look like yourself, just refreshed and happy. With a Reigning an outstanding reputation for excellence.
+
                 </p>
             </div>
             <div className="p-6">
@@ -200,4 +202,4 @@ const Fraciah = () => {
   )
 }
 
-export default Fraciah
+export default Reign

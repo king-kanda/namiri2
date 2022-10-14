@@ -3,7 +3,7 @@ import "./assets/fonts/Kaftan - Trial.otf"
 import "./assets/fonts/Neue-montreal/NeueMontreal-Medium.otf"
 // import { gsap } from "gsap";
 import { Route , Routes } from 'react-router-dom';
-import { Home ,About , Work ,Method ,Contact ,FraciahLaw } from './pages';
+import { Home ,About , Work ,Method ,Contact ,FraciahLaw, ReignDental } from './pages';
 
 import './App.css';
 
@@ -19,6 +19,7 @@ function App() {
          <Route path='/our-method' element={<Method/>}></Route>
          <Route path='/lets-talk' element={<Contact/>}></Route>
          <Route path='/case/fraciah-law' element={<FraciahLaw/>}></Route>
+         <Route path='/case/reign-dental' element={<ReignDental/>}></Route>
       </Routes>
     </div>
 

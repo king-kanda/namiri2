@@ -3,7 +3,11 @@ import { Navbar ,Footer } from '../components'
 import styled from 'styled-components'
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
 import { FraciahLaw, Iyebe, ReignD } from '../assets';
-const ourwork = () => {
+import { Link } from 'react-router-dom';
+
+const Ourwork = () => {
+
+  
 
       const Nav = styled.div`
           span.arrow{
@@ -36,15 +40,23 @@ const ourwork = () => {
             }
       `;
 
-      const Fraciah = styled.div`
+      const Case = styled.div`
           display:flex;
           align-content:center;
           justify-content:center;
           margin-bottom:50px;
-
+          position: relative;
+        
           img{
             height:100vh;
           }
+
+         .work-details-wrapper{
+
+          position: absolute;
+          bottom: 20px;
+           
+         }
 
           @media (max-width: 480px){
             display:flex;
@@ -95,15 +107,60 @@ const ourwork = () => {
         </div>
         {/*  */}
             <Portfolio className='contrainer'>
-                <Fraciah className='lg:py-6 p-3 lg:mb-4'>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                  <Link to="/case/fraciah-law">
                     <img src={FraciahLaw} alt="fraciah law mockup" />
-                </Fraciah>
-                <Fraciah className='lg:py-6 p-3 lg:mb-4'>
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Fraciah & CO.
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Website .
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                <Link to="/case/fraciah-law">
                     <img src={Iyebe} alt="fraciah law mockup" />
-                </Fraciah>
-                <Fraciah className='lg:py-6 p-3 lg:mb-4'>
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Iyebe Orchards
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Branding.
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                <Link to="/case/reign-dental">
                     <img src={ReignD} alt="fraciah law mockup" />
-                </Fraciah>
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Reign Dental Services.
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Website .
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
             </Portfolio>
         {/*  */}
         <div className="random-large-text container px-2 py-10">
@@ -163,4 +220,4 @@ const ourwork = () => {
   )
 }
 
-export default ourwork
+export default Ourwork

@@ -1,11 +1,12 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React , {useRef , useEffect} from 'react'
 // import { useEffect } from 'react'
 import { Navbar ,Footer ,Work, Testimonial } from '../components'
 import styled from 'styled-components'
-import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner , Giphy  ,Vector} from '../assets'
+import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner , Giphy } from '../assets'
 import { BsArrowRightShort } from "react-icons/bs";
 import { gsap } from "gsap";
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+// import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 
 const Home = () => {
@@ -396,7 +397,7 @@ We specialize in creating effective strategies and powerful identities , seamles
               </p>
             </div>
             <div className="image-svg-logo">
-              {/* <img src={Vector} class="img-fluid rounded-top" alt=""></img> */}
+                {/* <iframe src="https://embed.lottiefiles.com/animation/96848"></iframe> */}
             </div>
           </div>
       </About>
