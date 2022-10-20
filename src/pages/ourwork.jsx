@@ -1,9 +1,9 @@
 import React from 'react'
-import { Navbar ,Footer } from '../components'
+import { Navbar ,Footer, Work } from '../components'
 import styled from 'styled-components'
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
-import { FraciahLaw, Iyebe, ReignD } from '../assets';
-import { Link } from 'react-router-dom';
+// import { FraciahLaw, Iyebe, ReignD } from '../assets';
+// import { Link } from 'react-router-dom';
 
 const Ourwork = () => {
 
@@ -31,59 +31,9 @@ const Ourwork = () => {
           }
       `;
 
-      const Portfolio = styled.section`
-            padding:48px;
-
-            @media (max-width: 480px){
-              padding:12px;
-
-            }
-      `;
-
-      const Case = styled.div`
-          display:flex;
-          align-content:center;
-          justify-content:center;
-          margin-bottom:50px;
-          position: relative;
-        
-          img{
-            height:100vh;
-          }
-
-         .work-details-wrapper{
-
-          position: absolute;
-          bottom: 20px;
-           
-         }
-
-          @media (max-width: 480px){
-            display:flex;
-            align-content:center;
-            justify-content:center;
-            margin-bottom:10px;
-  
-            img{
-              height:100%;
-            }
-          }
-
-          @media (min-width: 481px) and (max-width:768px){
-            display:flex;
-            align-content:center;
-            justify-content:center;
-            margin-bottom:10px;
-  
-            img{
-              height:100%;
-            }
-          }
-
-      `;
 
   return (
-    <div className='Main-body'>
+    <>
         <div className="p-2 mb-5">
             <Navbar/>
         </div>
@@ -106,62 +56,7 @@ const Ourwork = () => {
             </div>
         </div>
         {/*  */}
-            <Portfolio className='contrainer'>
-                <Case className='lg:py-6 p-3 lg:mb-4'>
-                  <Link to="/case/fraciah-law">
-                    <img src={FraciahLaw} alt="fraciah law mockup" />
-
-                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
-                      <div className="name">
-                        <h3>
-                          Fraciah & CO.
-                        </h3>
-                      </div>
-                      <div className="details">
-                        <h3>
-                          Website .
-                        </h3>
-                      </div>
-                    </div>
-                  </Link>
-                </Case>
-                <Case className='lg:py-6 p-3 lg:mb-4'>
-                <Link to="/case/fraciah-law">
-                    <img src={Iyebe} alt="fraciah law mockup" />
-
-                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
-                      <div className="name">
-                        <h3>
-                          Iyebe Orchards
-                        </h3>
-                      </div>
-                      <div className="details">
-                        <h3>
-                          Branding.
-                        </h3>
-                      </div>
-                    </div>
-                  </Link>
-                </Case>
-                <Case className='lg:py-6 p-3 lg:mb-4'>
-                <Link to="/case/reign-dental">
-                    <img src={ReignD} alt="fraciah law mockup" />
-
-                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
-                      <div className="name">
-                        <h3>
-                          Reign Dental Services.
-                        </h3>
-                      </div>
-                      <div className="details">
-                        <h3>
-                          Website .
-                        </h3>
-                      </div>
-                    </div>
-                  </Link>
-                </Case>
-            </Portfolio>
+            <Work/>
         {/*  */}
         <div className="random-large-text container px-2 py-10">
             <h1 className='font-NeueBold lg:text-8xl md:text-7xl text-4xl text-white text-start lg:w-5/6 md:5/6 w-6/6'>
@@ -216,7 +111,7 @@ const Ourwork = () => {
 
         
         <Footer/>
-    </div>
+    </>
   )
 }
 

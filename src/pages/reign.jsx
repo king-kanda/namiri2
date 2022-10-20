@@ -65,7 +65,7 @@ const Reign = () => {
 
   
   return (
-    <div>
+    <>
          <div className="p-2 mb-5">
             <Navbar/>
         </div>
@@ -198,7 +198,7 @@ const Reign = () => {
         </div>
         {/* footer */}
         <Footer/>
-    </div>
+    </>
   )
 }
 

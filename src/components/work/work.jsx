@@ -1,95 +1,119 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FraciahLaw, Iyebe } from '../../assets';
+import { FraciahLaw, Iyebe ,ReignD} from '../../assets';
+import { Link } from 'react-router-dom';
 
 const Work = () => {
 
-    const Display = styled.div`
-         
-        h1{
-          font-size:200px;
-          span{
-            font-size:250px;
-          }
+  const Portfolio = styled.section`
+  padding:48px;
 
-          @media (max-width: 480px){
-              font-size:70px;
-              span{
-                font-size:50px;
-              }
-          }
-          @media (min-width: 481px) and (max-width:1024px){
-            font-size:100px;
-            span{
-              font-size:150px;
-            }
-          }
+  @media (max-width: 480px){
+    padding:12px;
 
-          @media 
-              (max-device-width: 1280px) 
-              and (orientation: landscape)
-              and (-webkit-min-device-pixel-ratio: 2) { 
-                font-size:100px;
-                span{
-                  font-size:150px;
-                }
-            }
-        }
+  }
+`;
 
-        
-    `;
+const Case = styled.div`
+display:flex;
+align-content:center;
+justify-content:center;
+margin-bottom:50px;
+position: relative;
 
-    const Item = styled.div`
-      
-        img{
-          height:100vh;
+img{
+  height:100vh;
+}
 
-          @media (max-width: 480px){
+.work-details-wrapper{
 
-              height:auto;
-          } 
-          @media (min-width: 481px) and (max-width:1024px){
-            height:auto;
-          }
+position: absolute;
+bottom: 20px;
+ 
+}
 
-          @media 
-            (min-width: 481px) and 
-            (max-width:1024px)and 
-            (orientation : landscape) {
-            height:100%;
-          }
+@media (max-width: 480px){
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  margin-bottom:10px;
 
-          @media 
-            (max-device-width: 1280px) 
-            and (orientation: landscape)
-            and (-webkit-min-device-pixel-ratio: 2) { 
-              height:100%;
-              
-          }
-        }
-    `;
+  img{
+    height:100%;
+  }
+}
 
+@media (min-width: 481px) and (max-width:768px){
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  margin-bottom:10px;
+
+  img{
+    height:100%;
+  }
+}
+
+`;
   return (
     <div className='pwro'>
       <div className="work-container px-6 py-4">
-        <Display className="display">
-          <h1 className='font-NeueBold text-center text-white py-10' > <span className='font-kaftan italic'>Our </span> WORK</h1>
-          <Item className='item-display container flex items-center justify-center' >
-            <div className="prt-itm">
-              <img src={FraciahLaw} alt="" />
-            </div>
-          </Item>
-          <Item className='item-display container flex items-center justify-center mt-12' >
-            <div className="prt-itm">
-              <img src={Iyebe} alt="" />
-            </div>
-          </Item>
-          <Item className='item-display container flex items-center justify-center mt-12' >
-            <div className="prt-itm">
-              <img src={FraciahLaw} alt="" />
-            </div>
-          </Item>
-        </Display>
+      <Portfolio className='contrainer'>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                  <Link to="/case/fraciah-law">
+                    <img src={FraciahLaw} alt="fraciah law mockup" />
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Fraciah & CO.
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Website .
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                <Link to="/case/fraciah-law">
+                    <img src={Iyebe} alt="fraciah law mockup" />
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Iyebe Orchards
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Branding.
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
+                <Case className='lg:py-6 p-3 lg:mb-4'>
+                <Link to="/case/reign-dental">
+                    <img src={ReignD} alt="fraciah law mockup" />
+
+                    <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
+                      <div className="name">
+                        <h3>
+                          Reign Dental Services.
+                        </h3>
+                      </div>
+                      <div className="details">
+                        <h3>
+                          Website .
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </Case>
+            </Portfolio>
       </div>
     </div>
   )
