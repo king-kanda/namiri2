@@ -1,9 +1,10 @@
 import React , {useEffect} from 'react'
 import { Navbar , Footer } from '../components'
 import styled from 'styled-components';
-import { FraciahDribble, FraciahHeader, FraciahLaw, FraciahMobile } from '../assets';
+import { FBC, Iyebe, IyeberCup, IyeberFarm, Mango1, Mango2, Shirt } from '../assets';
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+
 
 const Fraciah = () => {
 
@@ -79,37 +80,38 @@ const Fraciah = () => {
         <div className="main-body container">
             <Hero className="hero lg:px-12 p-6">
                 <div className="hero-container">
-                    <p className='font-NeueRegular text-white'> Wakili A Quick One !</p>
+                    <p className='font-NeueRegular text-white'> Mango Makes Everything better Does it ?!</p>
                     <HeroText className='font-kaftan text-white'>
-                    <span className='text-namiri-yellow'> Unique </span> Approach to <br />
-                    Law.
+                    <span className='text-namiri-yellow'> Fresh </span> Farmer <br />
+                    Embes.
                     </HeroText>
                 </div>    
             </Hero>
             <div className="intro p-4 lg:flex md:flex  items-center justify-center container">
                 <div className="img-container">
-                    <img src={FraciahHeader} alt="" />
+                    <img src={Iyebe} alt="" />
                 </div>
                 <div className="cl-det text-white lg:px-10 md:px-8 px-5">
                     <div className="cl-info p-4">
                         <div className="h3 underline font-NeueBold text-2xl py-2">Client</div>
-                        <p className='font-NeueRegular'>Frachia law & CO Advocates</p>
+                        <p className='font-NeueRegular'> Iyebe Orchards</p>
                     </div>
                     <div className="cl-del p-4">
                         <div className="h3 underline font-NeueBold text-2xl py-2">Deliverables</div>
-                        <p className='font-NeueRegular'>Web Design</p>
+                        <p className='font-NeueRegular'>Branding</p>
                         <p className='font-NeueRegular'>Visual Identity</p>
                     </div>
                     <div className="cl-studii p-4">
                         <div className="h3 underline font-NeueBold text-2xl py-2">Team</div>
                         <p className='font-NeueRegular'>Namiri Creatives - Web Design Team</p>
-                       
+                        <p className='font-NeueRegular'>Iyebe - Alex Graphic Designer</p>
+                    
                     </div>
                 </div>
             </div>
             <div className="cl-abt flex items-start justify-center container lg:p-6 md:p-3 p-3 m-2">
                 <p className='text-white lg:text-4xl md:text-3xl text-2xl font-NeueRegular lg:w-4/5 md:w-4/5 w-full'>
-                Fraciah & CO Advocates is a boutique law firm located in the heart of Nairobi with a team of highly qualified and dynamic professionals who represent the new face of legal practice in tune with today’s legal requirements.
+                It all starts in the Mango orchard of the Domaine de Ouézy in the Pays d’Auge, a place where mango trees grow everywhere. We drove through the sleepy countryside to get there, bathed in sunshine on this day. Upon arrival, we are greeted by the farm’s friendly owner,Mr Gabriel DUpont
                 </p>
             </div>
             <div className="p-6">
@@ -123,18 +125,23 @@ const Fraciah = () => {
                 </div>
                 <div className="amb-stt lg:w-3/6 md:w-4/6 w-full ">
                     <p className='text-white lg:text-2xl text-xl font-NeueRegular'>
-                    The firm needed a more authentic brand, one that did justice to their talent and passion. And they needed a new high-performance website to help them achieve their goals and connect with clients.
+                    The new owners wanted a makeover. Wanting something trendier, clean and modern to attract a younger audience, the team reached out to Clay Pot Creative for a refresh on their brand.
+                    Doing Everything from juices to yoghurts, we wanted to give customers an instant snapshot on what they could get from Grand Junction's full-service U-pick orchard. We also wanted to give the brand a more modern look and feel, while still keeping the family feel of the orchard.
                     </p>
                 </div>
             </div>
             {/* add images here */}
             <ImageCont className="image-cont lg:flex md:flex jusfify-between m-5">
-                <div className="div p-4">
-                    <img className='imag1' src={FraciahHeader} alt="" />
-                    <img className='imag1 py-6' src={FraciahMobile} alt="" />
+                <div className="div p-4  w-3/5">
+                    <img className='imag1' src={Shirt} alt=""  />
+                    <img className='imag1 py-6' src={IyeberFarm} alt="" />
                 </div>
                 <div className="div p-4">
-                    <img className='imag2' src={FraciahLaw} alt="" />
+                    <img className='imag2' src={FBC} alt="" />
+                   <div className="div grid grid-cols-2 gap-6">
+                     <img className='imag2' src={Mango1} alt="" />
+                     <img className='imag2' src={Mango2} alt="" />
+                   </div>
                 </div>
             </ImageCont>
             {/*  */}
@@ -146,13 +153,14 @@ const Fraciah = () => {
                 </div>
                 <div className="amb-stt lg:w-3/6 md:w-4/6 w-full">
                     <p className='text-white lg:text-2xl text-xl font-NeueRegular'>
-                    We created a new brand identity that was more authentic and aligned with the firm’s values. We also created a new website that was more user-friendly and easy to navigate.
+                    A dynamic visual ecosystem and toolbox that gives direction to all parties involved, while leaving room for own input without losing the identity. This makes the brand identity future-proof, so that a consistently strong brand can be built over the long term.
+                    
                     </p>
                 </div>
             </div>
             {/* also add images here */}
             <div className="fimage flex items-center justify-center m-8">
-                <img src={FraciahDribble} alt="" />
+                <img src={IyeberCup} alt="" />
             </div>
             {/* end */}
         </div>
@@ -186,13 +194,13 @@ const Fraciah = () => {
                         PREVIOUS
                       </h5>
                       <h2 className="name-link font-NeueBold italic text-white lg:text-6xl">
-                        Iyebe <br />
-                        Orchards
+                        Fraciah & CO <br />
+                        Advocates.
                       </h2>
                       <div className="icon p-4 flex items-center justify-center">
                      
                         <span className='arrow text-namiri-yellow lg:text-6xl text-4xl '>
-                            <Link to="/case/iyebe">
+                            <Link to="/case/fraciah-law">
                                 <BsArrowRightShort/>
                             </Link>
                         </span>

@@ -11,3 +11,11 @@ body{
     height: 600px;
     width: auto;
 }
+
+@media (max-width: 480px){
+    .reign-banner {
+        height:250px;
+        width: auto;
+    }
+   
+  }

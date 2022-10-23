@@ -14,52 +14,76 @@ const Work = () => {
   }
 `;
 
-const Case = styled.div`
-display:flex;
-align-content:center;
-justify-content:center;
-margin-bottom:50px;
-position: relative;
+  const Case = styled.div`
 
-img{
-  height:100vh;
-}
-
-.work-details-wrapper{
-
-position: absolute;
-bottom: 20px;
- 
-}
-
-@media (max-width: 480px){
   display:flex;
   align-content:center;
   justify-content:center;
-  margin-bottom:10px;
+  margin-bottom:50px;
+  position: relative;
+
+  .cursor{
+    height: 20px;
+    width: 20px; 
+    border-radius: 50%;
+    border:  2px solid white;
+    border-style: dashed;
+    position: absolute ;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+  }
+
+  @keyframes cursorAnim {
+    from{
+        transform:  scale(1.5);
+    }
+
+    to {
+        transform:  scale( .7);
+    }
+  }
 
   img{
-    height:100%;
+    height:100vh;
   }
-}
 
-@media (min-width: 481px) and (max-width:768px){
-  display:flex;
-  align-content:center;
-  justify-content:center;
-  margin-bottom:10px;
+  .work-details-wrapper{
 
-  img{
-    height:100%;
+  position: absolute;
+  bottom: 20px;
+  
   }
-}
 
-`;
+  @media (max-width: 480px){
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    margin-bottom:10px;
+
+    img{
+      height:100%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width:768px){
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    margin-bottom:10px;
+
+    img{
+      height:100%;
+    }
+  }
+
+  `;
   return (
     <div className='pwro'>
       <div className="work-container px-6 py-4">
       <Portfolio className='contrainer'>
                 <Case className='lg:py-6 p-3 lg:mb-4'>
+                {/* <div className="cursor"></div> */}
                   <Link to="/case/fraciah-law">
                     <img src={FraciahLaw} alt="fraciah law mockup" />
 
@@ -78,7 +102,7 @@ bottom: 20px;
                   </Link>
                 </Case>
                 <Case className='lg:py-6 p-3 lg:mb-4'>
-                <Link to="/case/fraciah-law">
+                <Link to="/case/iyebe">
                     <img src={Iyebe} alt="fraciah law mockup" />
 
                     <div className="p-5 text-white font-NeueRegular text-xl work-details-wrapper ">
