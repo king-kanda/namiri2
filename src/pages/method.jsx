@@ -160,7 +160,7 @@ const Method  = () => {
         </div>
         
         <div className="txt-ff flex items-center justify-center p-4">
-            <p className='p-2 text-start font-NeueRegular text-3xl lg:w-4/6  w-6/6 text-white '>
+            <p className='p-2 text-start font-Adieu text-4xl lg:w-4/6  w-6/6 text-white '>
             We work with clients out of our office or yours—worldwide. We are not bound by geography but we are bound by our own integrity and commitment to you .
             </p>
         </div>

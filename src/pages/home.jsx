@@ -1,11 +1,11 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
 import React , {useRef , useEffect} from 'react'
-// import { useEffect } from 'react'
+
 import { Navbar ,Footer ,Work, Testimonial } from '../components'
 import styled from 'styled-components'
-import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner , Giphy } from '../assets'
+import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner } from '../assets'
 import { BsArrowRightShort } from "react-icons/bs";
 import { gsap } from "gsap";
+import { Link } from 'react-router-dom';
 // import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 
@@ -19,24 +19,11 @@ const Home = () => {
   });
 
   const HeroText = styled.h1`
+
       font-size:100px;
       padding-left:38px;
       padding-right:48px;
-     
-
-      span::after {
-        content:'' ;
-        background:url(${Giphy});
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center center;
-        position: absolute;
-        width: 256px;
-        height: 192px;
-        margin-left:-200px;
-        margin-top:50px;
-        z-index: -1;
-      }     
+    
 
       @media (max-width: 480px){
        
@@ -44,41 +31,20 @@ const Home = () => {
         padding-left:8px;
         padding-right:8px;
 
-      
-        span::after {
-          content:'' ;
-          display:none;
-         
-        }     
       }
 
       @media (min-width: 481px) and (max-width:1024px){
         font-size:70px;
         padding-left:18px;
         padding-right:18px;
-  
-        
-        span::after {
-          content:'' ;
-          // display:none;
-          background:url(${Giphy});
-          background-repeat:no-repeat;
-          background-size:cover;
-          background-position:center center;
-          position: absolute;
-          width: 246px;
-          height: 172px;
-          margin-left:-200px;
-          margin-top:50px;
-          z-index: -1;
-        }     
+    
       }
   `;
 
   const Hero = styled.section`
     display:flex;
     align-items:center;
-    height:70vh;
+    height:80vh;
 
     @media (max-width: 480px){
       height:60vh;
@@ -115,7 +81,7 @@ const Home = () => {
   const Image =styled.img`
       height:400px;
       z-index:999;
-      margin-right:-300px;
+      margin-right:-400px;
       margin-top:150px;
 
       // @media (min-width: 481px) and (max-width:768px){
@@ -248,6 +214,12 @@ const Home = () => {
         }
   `;
 
+  const Title = styled.div`
+      p{
+        font-size:200px;
+      }
+  `;
+
   return (
     <div className='home'>
       {/* header element */}
@@ -257,20 +229,24 @@ const Home = () => {
       <Hero className="hero container px-12 md:px-4">
        <div className="hero-container">
           <p className='font-NeueRegular text-namiri-yellow'>Karibu, We are Namiri Creatives</p>
-          <HeroText ref={opac} className='lg:font-kaftan md:font-kaftan font-NeueBold text-white'>
-            Creating <span className='text-namiri-yellow font-kaftan'>Timeless</span> <br />
+          <HeroText ref={opac} className='lg:font-Adieu md:font-Adieu  text-white'>
+            Creating  <span className='text-namiri-yellow font-Adieu'>Timeless</span> <br />
             Brands. 
           </HeroText>
-          <Buttons className="cta-btns  w-72 flex items-center justify-between  ">
-            <button className='rounded bg-namiri-yellow text-namiri-light font-NeueRegular px-5  py-2'>
-              About us 
+          <Buttons className="cta-btns   flex items-center   ">
+            <button className='rounded-full bg-namiri-yellow text-namiri-dark font-NeueBold font-bold px-7  py-3'>
+              More About us 
+            </button>
+
+            <button className=' text-namiri-yellow pl-9 text-2xl font-NeueRegular font-bold px-7 py-3'>
+              Contact Us
             </button>
           </Buttons>
         </div>
       </Hero>
       <div className="aboutus m-4">
         <div className="container lg:flex md:flex gap-0 ">
-          <div className='lg:w-60 md:w-20'>
+          <div className='lg:w-10 md:w-10'>
           
           </div>
           <Image src={M1} alt="" ></Image>
@@ -282,10 +258,10 @@ const Home = () => {
                   <hr />
                 </div>
                 <div className="abt text">
-                  <p className="font-NeueRegular">
+                  <p className="font-NeueRegular text-xl">
                   Namiri Creatives is a digital design agency, that houses brands, businesses, and Organisations. We help them grow, increase their revenues, expand brand awareness and connect with happy customers as well as earn happy customers too.
 
-We specialize in creating effective strategies and powerful identities , seamless interactions, and memorable customer experiences to connect brands to their customers.
+                  We specialize in creating effective strategies and powerful identities , seamless interactions, and memorable customer experiences to connect brands to their customers.
                   </p>
                 </div>
             </div>
@@ -301,15 +277,15 @@ We specialize in creating effective strategies and powerful identities , seamles
 
             <div className="ser-1 lg:border-r md:border-r border-gray-500 ">
 
-              <div className="ser-tt p-6 md:p-3  p-2">
+              <div className="ser-tt p-6 ">
                 <h2 className='font-kaftan text-white md:text-xl text-2xl'>Web Design <br /> & Development
                 </h2>
-                <span className="font-NeueRegular text-namiri-sun">
-                  Digital Design
+                <span className="font-NeueRegular text-namiri-yellow ">
+                  Brand Expirience
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-kaftan text-namiri-sun  text-center'>
+                <h1 className='font-NeueBold text-white  text-center'>
                   1
                 </h1>
               </div>
@@ -320,12 +296,12 @@ We specialize in creating effective strategies and powerful identities , seamles
             <div className="ser-tt p-6">
                 <h2 className='font-kaftan text-white md:text-xl text-xl'>Branding <br /> & Identity Strategies 
                 </h2>
-                <span className="font-NeueRegular text-namiri-sun">
+                <span className="font-NeueRegular text-namiri-yellow ">
                   Digital Design & Branding
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-kaftan text-namiri-sun  text-center'>
+                <h1 className='font-NeueBold text-white   text-center'>
                   2
                 </h1>
               </div>
@@ -336,12 +312,12 @@ We specialize in creating effective strategies and powerful identities , seamles
             <div className="ser-tt p-6">
                 <h2 className='font-kaftan text-white md:text-xl text-2xl'>Graphic <br /> & Design
                 </h2>
-                <span className="font-NeueRegular text-namiri-sun">
+                <span className="font-NeueRegular text-namiri-yellow ">
                   Digital Design
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-kaftan text-namiri-sun  text-center'>
+                <h1 className='font-NeueBold text-white   text-center'>
                   3
                 </h1>
               </div>
@@ -351,12 +327,12 @@ We specialize in creating effective strategies and powerful identities , seamles
             <div className="ser-tt p-6">
                 <h2 className='font-kaftan text-white md:text-xl text-2xl'>Digital <br /> & Marketing.
                 </h2>
-                <span className="font-NeueRegular text-namiri-sun">
+                <span className="font-NeueRegular text-namiri-yellow ">
                   Digital Marketing
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-kaftan text-namiri-sun  text-center'>
+                <h1 className='font-NeueBold text-white   text-center'>
                  4
                 </h1>
               </div>
@@ -365,6 +341,8 @@ We specialize in creating effective strategies and powerful identities , seamles
           </div>
         </div>
       </OurServices>
+
+
       {/* big ass quote */}
       <Quote className="mt-12 p-0 z-20 ">
             <div className="brank p-">
@@ -401,7 +379,47 @@ We specialize in creating effective strategies and powerful identities , seamles
             </div>
           </div>
       </About>
+      <Title className="title-text-center">
+            <p className="text-center font-Adieu text-white">
+                <span className="font-kaftan italic">our</span> Work.
+            </p>
+        </Title>
       <Work/>
+      {/* adding expirince  and figures and facts */}
+      <div className="container figs px-5 ">
+        <div className="grid grid-cols-3 gap-4 p-4">
+          <div className="exp p-6">
+            <h2 className='font-Adieu text-white text-9xl text-center'>
+              7<span className='font-Adieu'>+</span>
+            </h2>
+            <p className="text-white font-NeueRegular text-center text-xl px-3">
+              Years Of Expirience
+            </p>
+          </div>
+
+          <div className="customer p-6">
+            <h2 className='font-NeueBold text-white text-9xl text-center'>
+              15
+            </h2>
+            <p className="text-white font-NeueRegular text-center text-xl px-3">
+                Regular customers of
+                3 years or longer
+            </p>
+          </div>
+
+          <div className="no-customer p-6">
+           <h2 className='font-NeueBold text-white text-9xl text-center'>
+              21 <span className='font-Adieu'>+</span>
+            </h2>
+            <p className="text-white font-NeueRegular text-center text-xl px-3">
+                Satisfied clients
+            </p>
+          </div>
+          
+        </div>
+
+        <hr className='w-6/6 text-white' align="center" />
+      </div>
       <Testimonial/>
       <hr align="center" className='w-5/6 text-white'   />
       <Brands className='container lg:p-10 md:p-8 p-6'>
@@ -461,7 +479,9 @@ We specialize in creating effective strategies and powerful identities , seamles
         </h1>
         <div className="icon p-4 flex items-center justify-center">
           <span className='text-center text-namiri-yellow text-6xl '>
+           <Link to="/case/lets-talk">
             <BsArrowRightShort/>
+           </Link> 
           </span>
         </div>
       

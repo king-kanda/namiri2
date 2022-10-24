@@ -9,6 +9,12 @@
       url("./assets/fonts/Kaftan\ -\ Trial.otf") format("truetype");
   }
 
+@font-face {
+  font-family: "Adieu";   /*Can be any text*/
+  src: local("Adieu"),
+    url("./assets/fonts/Adieu-Bold.otf") format("truetype");
+}
+
 
 @font-face {
     font-family: "Neue-regular";   /*Can be any text*/

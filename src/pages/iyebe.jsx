@@ -174,7 +174,7 @@ const Fraciah = () => {
                     <h5 className="font-NeueRegular p-2 text-white text-center">
                         PREVIOUS
                       </h5>
-                      <h2 className="name-link font-NeueBold italic text-white lg:text-6xl">
+                      <h2 className="name-link font-Adieu text-white lg:text-6xl">
                         Reign Dental <br />
                         Services.
                       </h2>
@@ -193,7 +193,7 @@ const Fraciah = () => {
                     <h5 className="font-NeueRegular p-2 text-white text-center">
                         PREVIOUS
                       </h5>
-                      <h2 className="name-link font-NeueBold italic text-white lg:text-6xl">
+                      <h2 className="name-link font-Adieu text-white lg:text-6xl">
                         Fraciah & CO <br />
                         Advocates.
                       </h2>

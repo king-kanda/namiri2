@@ -3,7 +3,7 @@ import { Navbar ,Footer, Work } from '../components'
 import styled from 'styled-components'
 import { BsArrowRightShort ,BsArrowLeftShort } from "react-icons/bs";
 // import { FraciahLaw, Iyebe, ReignD } from '../assets';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Ourwork = () => {
 
@@ -69,15 +69,16 @@ const Ourwork = () => {
               <div className="link1 p-5 flex justify-center">
                    <div className="link-container">
                     <h5 className="font-NeueRegular p-2 text-white text-center">
-                        PREVIOUS
+                        Previous
                       </h5>
-                      <h2 className="name-link font-NeueBold italic text-white lg:text-6xl">
-                        REIGN DENTAL <br />
-                        SERVICES
+                      <h2 className="name-link font-Adieu text-white text-center lg:text-6xl">
+                         More<br />About Us
                       </h2>
                       <div className="icon p-4 flex items-center justify-center">
                           <span className='arrow text-namiri-yellow lg:text-6xl  text-5xl '>
+                          <Link to="/about-us">
                               <BsArrowLeftShort />
+                          </Link>    
                           </span>
                       </div>
                    </div>
@@ -86,15 +87,17 @@ const Ourwork = () => {
               <div className="link2 p-5 flex justify-center">
                    <div className="link-container">
                     <h5 className="font-NeueRegular p-2 text-white text-center">
-                        PREVIOUS
+                        Next
                       </h5>
-                      <h2 className="name-link font-NeueBold italic text-white lg:text-6xl">
-                        REIGN DENTAL <br />
-                        SERVICES
+                      <h2 className="name-link font-Adieu text-white text-center lg:text-6xl">
+                        Our <br />
+                        Method
                       </h2>
                       <div className="icon p-4 flex items-center justify-center">
                           <span className='arrow text-namiri-yellow lg:text-6xl text-4xl '>
-                              <BsArrowRightShort/>
+                          <Link to="/our-method">
+                             <BsArrowRightShort/>
+                          </Link>    
                           </span>
                       </div>
                    </div>

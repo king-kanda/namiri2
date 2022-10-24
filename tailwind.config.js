@@ -12,7 +12,8 @@ module.exports = {
       kaftan: ['kaftan'],
       NeueRegular: ['Neue-regular'],
       NeueBold: ['Neue-bold'] ,
-      NeueLight: ['Neue-light']
+      NeueLight: ['Neue-light'] ,
+      Adieu: ['Adieu']
       
     },
 

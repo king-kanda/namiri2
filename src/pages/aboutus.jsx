@@ -123,7 +123,7 @@ const Aboutus = () => {
             <div className="hero-container">
                 <p className='font-NeueRegular text-namiri-yellow'> Idea driven power house</p>
                 <HeroText className='font-kaftan text-white'>
-                Home of  <span className='text-namiri-yellow'> Iconic </span> <br />
+                Home of  <span className='text-namiri-yellow font-Adieu'> Iconic </span> <br />
                 Brands.
                 </HeroText>
             </div>    
@@ -134,7 +134,7 @@ const Aboutus = () => {
 
                 </div>
                 <div className="ico-txt">
-                    <p className="font-NeueLight text-2xl text-white w-5/5 ">
+                    <p className="font-NeueLight text-xl text-white w-5/5 ">
                     Housing brands, businesses, and Organisations ,helping them grow, increase their revenues, expand brand awareness and connect with happy customers as well as earn happy customers too.
                     </p>
                 </div>
@@ -147,11 +147,11 @@ const Aboutus = () => {
             <div className="div-blank bg-gray-700 p-10"></div>
             <div className="abt-text lg:grid md:grid grid-cols-2 gap-4 bg-gray-700 lg:p-12 p-6  bottom-0">
                 <div className="abt-tt">
-                    <h1 className="font-NeueRegular lg:text-5xl md:text-5xl font-bold md:py-5">
+                    <h1 className="font-NeueRegular lg:text-5xl md:text-4xl font-bold md:py-5">
                       Helping brands connect <br /> to their customers.
                     </h1>
                 </div>
-                <div className="abt-txt lg:w-5/6 w-5/5 md:text-2xl text-xl">
+                <div className="abt-txt lg:w-5/6 w-5/5 md:text-xl text-xl">
                     <p>
                     Namiri Creatives is a digital design agency, that houses brands, businesses, and Organisations. We help them grow, increase their revenues, expand brand awareness and connect with happy customers as well as earn happy customers too.
                     </p>
