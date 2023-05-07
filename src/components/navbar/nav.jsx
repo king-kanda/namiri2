@@ -30,6 +30,12 @@ const Navbar = () => {
                     Agency
                   </span>
                 </div>
+                <div className="name-namiri hidden md:block">
+                  <span className='font-NeueRegular text-gray-500'>
+                    Garage numérique <br></br>
+                    Sein , France
+                  </span>
+                </div>
                 <div className="menu-trigger">
                   <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500  md:hidden  focus:outline-none focus:ring-0  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" onClick={showNavbar}>          
                     <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
@@ -49,6 +55,9 @@ const Navbar = () => {
                     </li>
                     <li className="wait font-NeueRegular">
                             <Link to='/our-method'> Our method</Link>
+                    </li>
+                    <li className="wait font-NeueRegular">
+                            <Link to='/our-method'> Blogs </Link>
                     </li>
                     <div className="contact-us flex items-center justify-evenly">
                       <Link to='/lets-talk'>
@@ -87,17 +96,17 @@ const Navbar = () => {
                         <div className="nav-text flex items-start justiify-evenly" id='slide'>
                             <span className='font-kaftan text-white text-2xl px-3'>01</span>
                             <h3 className='text-white font-NeueBold text-5xl '>
-                              <a href="/about-us">
+                              <Link to="/about-us">
                               About Us.
-                              </a>
+                              </Link>
                             </h3>
                         </div>
 
                         <div className="nav-text flex items-end justiify-evenly" id='slide'>
                             <h3 className='text-white font-NeueBold text-5xl '>
-                              <a href="/our-method">
+                              <Link to="/our-method">
                                   Method .
-                              </a>
+                              </Link>
                             </h3>
                             <span className='font-kaftan text-white text-2xl px-3'>02</span>
                         </div>
@@ -105,17 +114,17 @@ const Navbar = () => {
                         <div className="nav-text flex items-start justiify-evenly" id='slide'>
                             <span className='font-kaftan text-white text-2xl px-3'>03</span>
                             <h3 className='text-white font-NeueBold text-5xl '>
-                              <a href="/our-work">
+                              <Link to="/our-work">
                                   Our Work.
-                              </a>
+                              </Link>
                             </h3>
                         </div>
 
                         <div className="nav-text flex items-end justiify-evenly" id='slide'>
                             <h3 className='text-white font-NeueBold text-5xl '>
-                              <a href="/lets-talk">
+                              <Link to="/lets-talk">
                                   Contact .
-                              </a>
+                              </Link>
                             </h3>
                             <span className='font-kaftan text-white text-2xl px-3'>04</span>
                         </div>

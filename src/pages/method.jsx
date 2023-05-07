@@ -117,7 +117,7 @@ const Method  = () => {
                         Strategy <span className='text-white '>equals</span> success.
                     </h2>
                     <p className="font-NeueRegular text-white text-xl lg:w-4/5 lg:py-5 p-2 w-5/5">
-                    We listen and pay attention to our clients, we ask questions and establish what needs to be done and we give it our best to solve the challenge presented to us.
+                    we're committed to developing the best action plan for your brand's growth. Our ambition is to see small to large-scale businesses, freelancers, and non-governmental organizations thrive.
                     </p>
                 </div>
             </div>
@@ -148,7 +148,7 @@ const Method  = () => {
                     <img src={WireFrame} alt="" />
                      <div className="text-img">
                      <p className="font-NeueRegular text-white text-xl lg:px-6 lg:py-12 p-6">
-                    Our ambition is to see the growth of small to large-scale businesses, as well as freelancers and non-governmental organizations. We work in the context of development, building trust and relationships as the days pass. We are devoting time and resources to developing the best action plan for your brand's growth.
+                    Our ambition is to see the growth of StarUps and Travel Agencies grow , not forgetting all scales of Businesses. We work in the context of development, building trust and relationships as the days pass. We are devoting time and resources to developing the best action plan for your brand's growth.
                     </p>
                     </div>
                 </div>
@@ -159,11 +159,7 @@ const Method  = () => {
             </div>
         </div>
         
-        <div className="txt-ff flex items-center justify-center p-4">
-            <p className='p-2 text-start font-Adieu text-4xl lg:w-4/6  w-6/6 text-white '>
-            We work with clients out of our office or yours—worldwide. We are not bound by geography but we are bound by our own integrity and commitment to you .
-            </p>
-        </div>
+        
             <hr className='w-5/6 text-white' align="center" />
             <Contact className='p-9'>
                 
@@ -174,13 +170,13 @@ const Method  = () => {
                 NAMIRI <br /> IMMEDIATELY.
                 </h1>
                 <div className="icon p-4 flex items-center justify-center">
-                <span className='text-center text-namiri-yellow text-6xl '>
+                <span className='text-center border rounded-full text-namiri-yellow text-6xl '>
                     <BsArrowRightShort/>
                 </span>
                 </div>
     
             </Contact>
-            <hr className='w-5/6 text-white' align="center" />
+            <hr className='w-5/6 text-white' align="end" />
             <div className="p-4">
 
             </div>

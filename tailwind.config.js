@@ -28,6 +28,8 @@ module.exports = {
       'namiri-l' : '#0a2416' ,
       'namiri-sun' : '#A37E2C' ,
       'white' : '#ffffff' ,
+      'namiri-gray' : '#959595' ,
+      'transparent' : 'transparent' ,
       
 
       // shift colors style

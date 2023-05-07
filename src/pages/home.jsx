@@ -1,8 +1,7 @@
 import React , {useRef , useEffect} from 'react'
-
-import { Navbar ,Footer ,Work, Testimonial } from '../components'
+import { Navbar ,Footer ,Work, Testimonial , Blogs } from '../components'
 import styled from 'styled-components'
-import { M1 ,Reign ,Cycle ,One ,two ,KSM, banner } from '../assets'
+import { M1 ,Reign ,Cycle ,One ,two ,KSM } from '../assets'
 import { BsArrowRightShort } from "react-icons/bs";
 import { gsap } from "gsap";
 import { Link } from 'react-router-dom';
@@ -46,6 +45,10 @@ const Home = () => {
     align-items:center;
     height:80vh;
 
+    P{
+      font-size:15px;
+    }
+
     @media (max-width: 480px){
       height:60vh;
     }
@@ -57,17 +60,7 @@ const Home = () => {
 
   `;
 
-  const Buttons = styled.div`
-      padding-left:38px;
-      // padding-right:48px;
-
-      @media (max-width: 480px){
-        padding-left:18px;
-        margin-top:20px;
-
-      }
-      
-  `;
+  
 
   const AboutUS = styled.div`
     @media (min-width: 481px) and (max-width:1024px){
@@ -120,15 +113,16 @@ const Home = () => {
   const OurServices = styled.div`
       .service-grid{
         display:flex;
-        align-items-center'
+        align-items:center;
         justify-content:center;
       }
 
-      h1{
+      
+      .ser-title{
         font-size:40px;
       }
-      .num h1 {
-        font-size:200px;
+      .num h2 {
+        font-size:150px;
       }
   `;
 
@@ -172,16 +166,7 @@ const Home = () => {
     }
   `;
 
-  const Banner = styled.div`
-   img{
-    height:700px;
-
-    @media (max-width: 10240px){
-      height:auto;
-    }
-
-   }
-  `;
+  
 
   const Quote = styled.div`
      z-index:1;
@@ -217,6 +202,10 @@ const Home = () => {
   const Title = styled.div`
       p{
         font-size:200px;
+
+        @media (max-width: 480px){
+          font-size:85px;
+        }
       }
   `;
 
@@ -229,19 +218,11 @@ const Home = () => {
       <Hero className="hero container px-12 md:px-4">
        <div className="hero-container">
           <p className='font-NeueRegular text-namiri-yellow'>Karibu, We are Namiri Creatives</p>
-          <HeroText ref={opac} className='lg:font-Adieu md:font-Adieu  text-white'>
-            Creating  <span className='text-namiri-yellow font-Adieu'>Timeless</span> <br />
+          <HeroText ref={opac} className='font-kaftan  text-white'>
+            Creating  <span className='text-namiri-yellow font-kaftan'>Timeless</span> <br />
             Brands. 
           </HeroText>
-          <Buttons className="cta-btns   flex items-center   ">
-            <button className='rounded-full bg-namiri-yellow text-namiri-dark font-NeueBold font-bold px-7  py-3'>
-              More About us 
-            </button>
-
-            <button className=' text-namiri-yellow pl-9 text-2xl font-NeueRegular font-bold px-7 py-3'>
-              Contact Us
-            </button>
-          </Buttons>
+          
         </div>
       </Hero>
       <div className="aboutus m-4">
@@ -271,7 +252,7 @@ const Home = () => {
       {/* sliders */}
 
       <OurServices className=' container lg:m-10 m-4 lg:px-16 lg:py-4 px-4 py-2  '>
-        <h1 className='font-kaftan text-white py-10'>Our Services. </h1>
+        <p className='font-kaftan text-white py-10 ser-title'>Our Services. </p>
         <div className="service-grids flex items-center justify-center ">
           <div className="lg:grid md:grid  grid-cols-4 gap-2">
 
@@ -285,9 +266,9 @@ const Home = () => {
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-NeueBold text-white  text-center'>
+                <h2 className='font-NeueBold text-white  text-center'>
                   1
-                </h1>
+                </h2>
               </div>
 
             </div>
@@ -301,9 +282,9 @@ const Home = () => {
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-NeueBold text-white   text-center'>
+                <h2 className='font-NeueBold text-white   text-center'>
                   2
-                </h1>
+                </h2>
               </div>
 
             </div>
@@ -317,9 +298,9 @@ const Home = () => {
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-NeueBold text-white   text-center'>
+                <h2 className='font-NeueBold text-white   text-center'>
                   3
-                </h1>
+                </h2>
               </div>
 
             </div>
@@ -332,9 +313,9 @@ const Home = () => {
                 </span>
               </div>
               <div className="num">
-                <h1 className='font-NeueBold text-white   text-center'>
+                <h2 className='font-NeueBold text-white   text-center'>
                  4
-                </h1>
+                </h2>
               </div>
             </div>
 
@@ -387,10 +368,10 @@ const Home = () => {
       <Work/>
       {/* adding expirince  and figures and facts */}
       <div className="container figs px-5 ">
-        <div className="grid grid-cols-3 gap-4 p-4">
+        <div className="grid l md:grid-cols-3 grid-cols-1 gap-4 p-4">
           <div className="exp p-6">
-            <h2 className='font-Adieu text-white text-9xl text-center'>
-              7<span className='font-Adieu'>+</span>
+            <h2 className='font-Adieu text-white md:text-9xl text-7xl text-center'>
+              5<span className='font-Adieu'>+</span>
             </h2>
             <p className="text-white font-NeueRegular text-center text-xl px-3">
               Years Of Expirience
@@ -398,8 +379,8 @@ const Home = () => {
           </div>
 
           <div className="customer p-6">
-            <h2 className='font-NeueBold text-white text-9xl text-center'>
-              15
+            <h2 className='font-NeueBold text-white md:text-9xl text-7xl text-center'>
+              25
             </h2>
             <p className="text-white font-NeueRegular text-center text-xl px-3">
                 Regular customers of
@@ -408,11 +389,11 @@ const Home = () => {
           </div>
 
           <div className="no-customer p-6">
-           <h2 className='font-NeueBold text-white text-9xl text-center'>
-              21 <span className='font-Adieu'>+</span>
+           <h2 className='font-NeueBold text-white md:text-9xl text-8xl text-center'>
+              2 <span className='font-Adieu'>+</span>
             </h2>
             <p className="text-white font-NeueRegular text-center text-xl px-3">
-                Satisfied clients
+                Awards
             </p>
           </div>
           
@@ -465,9 +446,7 @@ const Home = () => {
         </div>
 
       </Brands>
-      <Banner className="wall-img container px-10 py-10 flex justify-center">
-        <img src={banner} alt=""  />
-      </Banner>
+     <Blogs/>
       <hr className='w-5/6 text-white' align="center" />
       <Contact className='p-9'>
     
@@ -479,7 +458,7 @@ const Home = () => {
         </h1>
         <div className="icon p-4 flex items-center justify-center">
           <span className='text-center text-namiri-yellow text-6xl '>
-           <Link to="/case/lets-talk">
+           <Link to="/lets-talk">
             <BsArrowRightShort/>
            </Link> 
           </span>

@@ -76,7 +76,7 @@ const Contact = () => {
            <div className="hero-container">
                 <div className="random-large-text container p-2">
                     <h1 className='font-NeueBold lg:text-8xl  text-5xl text-white text-start lg:w-5/6'>
-                        WE'D LOVE TO <span className='text-namiri-yellow' >HEAR</span> FROM YOU . <br />  Hi THERE !
+                        WE'D LOVE TO <span className='text-namiri-yellow font-Adieu' >Hear</span> FROM YOU . <br />  Hi THERE !
                     </h1>
                 </div>
            </div>
@@ -117,18 +117,21 @@ const Contact = () => {
                 <div className="flex">
                     <span className='pxw font-NeueRegular text-gray-700' >Socials</span>
                     <div className="socials">
-                        <h2 className="font-kaftan lg:text-7xl text-4xl px-12 pb-4 text-start hover:text-namiri-yellow">
-                            Behance.
-                        </h2>
-                        <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
-                        Twitter.
-                        </h2>
-                        <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
-                        LinkedIn.
-                        </h2>
-                        <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
-                        Instagram.
-                        </h2>
+                        <a href="https://twitter.com/NamiriCreatives">
+                            <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
+                            Twitter.
+                            </h2>
+                        </a>
+                        <a href="https://www.instagram.com/namiricreatives/">
+                            <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
+                            Instagram.
+                            </h2>
+                        </a>
+                        <a href="https://www.linkedin.com/company/namiri-creatives?trk=public_post_share-update_social-details_comment_actor-name">
+                            <h2 className="font-kaftan lg:text-7xl text-4xl px-12 py-4  text-start hover:text-namiri-yellow">
+                            LinkedIn.
+                            </h2>
+                        </a>
 
                     </div>
                 </div>

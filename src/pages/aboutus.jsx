@@ -151,7 +151,7 @@ const Aboutus = () => {
                       Helping brands connect <br /> to their customers.
                     </h1>
                 </div>
-                <div className="abt-txt lg:w-5/6 w-5/5 md:text-xl text-xl">
+                <div className="font-NeueRegular abt-txt lg:w-5/6 w-5/5 md:text-xl text-xl">
                     <p>
                     Namiri Creatives is a digital design agency, that houses brands, businesses, and Organisations. We help them grow, increase their revenues, expand brand awareness and connect with happy customers as well as earn happy customers too.
                     </p>
@@ -210,7 +210,7 @@ const Aboutus = () => {
                         <li>Brand Identity</li>
                         <li>Visual Identity</li>
                         <li>Logos</li>
-                        <li>Stationery</li>
+                       
                     </ul>
                 </div>
                 <div className="br-xp px-6 py-2 ">
