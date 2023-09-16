@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Image } from 'cloudinary-react'
 import { IMG1, IMG2 , PLAYG } from '../assets';
 import { Navbar, Footer ,Testimonial } from '../components'
 
@@ -122,7 +123,7 @@ const Aboutus = () => {
       <Hero className="hero container lg:px-12 p-6">
             <div className="hero-container">
                 <p className='font-NeueRegular text-namiri-yellow'> Idea driven power house</p>
-                <HeroText className='font-kaftan text-white'>
+                <HeroText className='font-Adieu text-white'>
                 Home of  <span className='text-namiri-yellow font-Adieu'> Iconic </span> <br />
                 Brands.
                 </HeroText>
@@ -134,7 +135,7 @@ const Aboutus = () => {
 
                 </div>
                 <div className="ico-txt">
-                    <p className="font-NeueLight text-xl text-white w-5/5 ">
+                    <p className="font-NeueRegular text-xl text-white w-5/5 ">
                     Housing brands, businesses, and Organisations ,helping them grow, increase their revenues, expand brand awareness and connect with happy customers as well as earn happy customers too.
                     </p>
                 </div>
@@ -162,21 +163,66 @@ const Aboutus = () => {
                 </div>
             </div>
         </Abt>
+        <Serve className='contaner lg:px-20 lg:py-12 p-3 m-4 lg:grid  grid-cols-3 gap-4'>
+        <div className="main-tt lg:px-6">
+            <h2 className='font-NeueBold text-3xl text-namiri-yellow lg:p-0 md:p-3 py-6 text-start '>
+                Our Vission
+            </h2>
+        </div>
+        <div className="ser-coont col-span-2">
+           
+            <p className='font-NeueRegular text-xl text-white lg:w-5/5 py-4'>
+            Amidst a world often entangled in manipulation and insincere motives, we champion brands that prioritize genuine connections and positive impact over mere profit. We firmly believe that brands hold the power to shape societies for the better, and our commitment is to be a transparent force that brings out the best in people. This ethos extends to our agency services, where we're dedicated to creating timeless brands, aiming to empower clients with top-tier solutions. By remaining open and candid, we ensure that partnering with us not only yields exceptional results but also fosters collaboration that truly makes a difference.
+            </p>
+            {/* <div className="lg:grid md:grid grid-cols-3 gap-4">
+                <div className="digi-xp px-6 py-2">
+                    <h4 className="underline text-white font-NeueRegular lg:py-2 ">
+                        Digital Expirience
+                    </h4>
+                    <ul className='font-NeueRegular text-gray-100'>
+                        <li>Web Design</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div className="br-id px-6 py-2">
+                <h4 className="underline text-white font-NeueRegular py-2 ">
+                        Branding
+                    </h4>
+                    <ul className='font-NeueRegular text-gray-100'>
+                        <li>Brand Identity</li>
+                        <li>Visual Identity</li>
+                        <li>Logos</li>
+                       
+                    </ul>
+                </div>
+                <div className="br-xp px-6 py-2 ">
+                <h4 className="underline text-white font-NeueRegular py-2 ">
+                        Brand Expirience
+                    </h4>
+                    <ul className='font-NeueRegular text-gray-100'>
+                        <li>Copy Writing </li>
+                        <li>Social Media Managment</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div> */}
+        </div>
+       </Serve>
         <Gallery className="img-gll container">
             <div className="lg:px-6 lg:py-4 p-4 lg:m-6  m3">
                <div className="img-grid lg:flex md:flex items-center justify-between md:justify-around">
                     <div className="img-1 lg:px-4">
-                        <img src={IMG1} alt="" id='1' />
+                        <Image className={`  rounded-sm`} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1691957298/namiri/76519e4e55f205e5ad2823d6b0dd7945_tztyow.jpg" />
                     </div>
                     <div className="img-2 lg:px-4 mt-10 lg:mt-0 md:mt-0">
-                        <img src={IMG2} alt="" id='2' />
+                        <Image className={` rounded-sm`} cloudName="namiri" publicId="https://res.cloudinary.com/namiri/image/upload/v1688771720/namiri/about2_fhkkg2.webp" />
                     </div>
                </div>
             </div>
         </Gallery>
-        <div className="random-large-text container p-3">
+        <div className="random-large-text container py-3 md:py-12 px-5 ">
             <h1 className='font-NeueBold lg:text-8xl md:text-6xl text-5xl text-white text-start lg:4/5 md:w-5/5 '>
-               GROWING AND CONNECTING BRANDS TO THEIR CUSTOMERS.
+            A ONE-MAN STUDIO, BUT CERTAINLY NOT A ONE-MAN SHOW.
             </h1>
         </div>
        <Serve className='contaner lg:px-6 lg:py-4 p-3 m-4 lg:grid  grid-cols-2 gap-4'>
@@ -189,7 +235,7 @@ const Aboutus = () => {
             <h2 className='font-NeueBold text-3xl text-white' >
                 What we deliver.
             </h2>
-            <p className='font-NeueRegular text-white lg:w-4/5 py-4'>
+            <p className='font-NeueRegular text-xl text-white lg:w-5/5 py-4'>
             We create specialize in creating effective and powerful strategies and timeless brands and identities while creating seamless interactions and memorable experiences to create relationships between businesses and people.
             </p>
             <div className="lg:grid md:grid grid-cols-3 gap-4">

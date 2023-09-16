@@ -1,10 +1,11 @@
 import React , {useRef , useEffect} from 'react'
-import { Navbar ,Footer ,Work, Testimonial , Blogs } from '../components'
+import { Navbar ,Footer ,Work, Testimonial , Blogs , Brands} from '../components'
 import styled from 'styled-components'
-import { M1 ,Reign ,Cycle ,One ,two ,KSM } from '../assets'
+import { M1  } from '../assets'
 import { BsArrowRightShort } from "react-icons/bs";
 import { gsap } from "gsap";
 import { Link } from 'react-router-dom';
+
 // import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 
@@ -148,23 +149,7 @@ const Home = () => {
       }
   `;
 
-  const Brands = styled.div`
-    .logo{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      // background:red;
-      padding:10px
-    }
-    .logo img{
-      height:40px;
-    }
-
-
-    @media (max-width: 480px){
-      
-    }
-  `;
+  
 
   
 
@@ -403,49 +388,7 @@ const Home = () => {
       </div>
       <Testimonial/>
       <hr align="center" className='w-5/6 text-white'   />
-      <Brands className='container lg:p-10 md:p-8 p-6'>
-        <h3 className='text-white font-NeueBold lg:text-5xl md:text-4xl text-3xl'>Home of <span className='text-namiri-yellow font-kaftan '>Iconic </span> Brands .: </h3>
-        <p className='text-namiri-yellow font-NeueRegular text-xl'>Proud of working with .</p>
-        <div className="logos py-10">
-          <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 p-4">
-
-            <div className="logo ">
-              <img src={Reign} alt="" />
-            </div>
-            <div className="logo ">
-              <img src={Cycle} alt="" />
-            </div>
-            <div className="logo ">
-              <img src={One} alt="" />
-            </div>
-            <div className="logo ">
-              <img src={two} alt="" />
-            </div>
-            <div className="logo ">
-              <img src={KSM} alt="" />
-            </div>
-          </div>
-          <hr className='text-white'/>
-          <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 p-4 hidden lg:grid">
-              <div className="logo ">
-                <img src={Reign} alt="" />
-              </div>
-              <div className="logo ">
-                <img src={Cycle} alt="" />
-              </div>
-              <div className="logo ">
-                <img src={One} alt="" />
-              </div>
-              <div className="logo ">
-                <img src={two} alt="" />
-              </div>
-              <div className="logo ">
-                <img src={KSM} alt="" />
-              </div>
-          </div>
-        </div>
-
-      </Brands>
+      <Brands></Brands>
      <Blogs/>
       <hr className='w-5/6 text-white' align="center" />
       <Contact className='p-9'>

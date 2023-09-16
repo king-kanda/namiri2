@@ -76,7 +76,7 @@ const Contact = () => {
            <div className="hero-container">
                 <div className="random-large-text container p-2">
                     <h1 className='font-NeueBold lg:text-8xl  text-5xl text-white text-start lg:w-5/6'>
-                        WE'D LOVE TO <span className='text-namiri-yellow font-Adieu' >Hear</span> FROM YOU . <br />  Hi THERE !
+                        WE'D LOVE TO <span className='text-namiri-yellow' > HEAR</span> FROM YOU . <br />  Hi THERE !
                     </h1>
                 </div>
            </div>
